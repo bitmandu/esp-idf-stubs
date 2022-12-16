@@ -5,6 +5,7 @@
  */
 
 #include "stub_gpio.h"
+#include <string.h>
 
 /**< GPIO levels */
 typedef enum { UNKNOWN = -1, LOW, HIGH } level_t;
@@ -37,9 +38,14 @@ int gpio_get_level(gpio_num_t gpio_num)
     return gpio_state[gpio_num].level;
 }
 
-gpio_config_t *gpio_config_spy(gpio_num_t pin)
+gpio_config_t *stub_gpio_spy_config(gpio_num_t pin)
 {
     return &gpio_state[pin].config;
+}
+
+void stub_gpio_reset(void)
+{
+    memset(gpio_state, 0, sizeof(gpio_state));
 }
 
 bool pin_is_set(uint64_t pin_bit_mask, gpio_num_t pin)
