@@ -4,7 +4,7 @@ Test doubles for unit testing [ESP-IDF][1] components on a linux
 target.
 
 **Note**: These are *very* incomplete and are only intended to support
-my own projects (for now). The [SHT4x sensor component][sht4x] shows
+my own projects (for now). This [SHT4x sensor component][sht4x] shows
 these in action.
 
 ## Installation
@@ -17,13 +17,13 @@ the following to your `idf_component.yml`:
         version: ">=4.1.0"
 
       driver:
-        git: http://github.com/bitmandu/esp-idf-stubs.git
+        git: https://github.com/bitmandu/esp-idf-stubs.git
         path: driver
       hal:
-        git: http://github.com/bitmandu/esp-idf-stubs.git
+        git: https://github.com/bitmandu/esp-idf-stubs.git
         path: hal
       soc:
-        git: http://github.com/bitmandu/esp-idf-stubs.git
+        git: https://github.com/bitmandu/esp-idf-stubs.git
         path: soc
 
 Then update your managed components.
