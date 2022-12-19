@@ -1,0 +1,6 @@
+:cmock:
+  :plugins: ['ignore', 'ignore_arg', 'callback']
+  :mock_path: '../mocks'
+  :mock_prefix: 'mock_'
+  :subdir: 'driver'
+  :fail_on_unexpected_calls: false
