@@ -1,15 +1,15 @@
 /**
  * @file stub_gpio.h
  *
- * Test stub for driver/gpio.
+ * Test stub for driver/gpio.h interface.
  */
 
 #pragma once
 
+#include "driver/gpio.h"
+
 #include <stdbool.h>
 #include <stdint.h>
-
-#include "driver/gpio.h"
 
 /** Spy GPIO pin configuration. */
 gpio_config_t *stub_gpio_spy_config(gpio_num_t pin);

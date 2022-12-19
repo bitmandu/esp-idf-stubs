@@ -1,7 +1,7 @@
 /**
  * @file stub_gptimer.h
  *
- * Test stub for driver/gptimer.
+ * Test stub for driver/gptimer.h interface.
  */
 
 #pragma once

@@ -1,10 +1,10 @@
 /**
  * @file stub_gptimer.c
  *
- * Test stub for driver/gptimer.c.
+ * Test stub for driver/gptimer.h interface.
  */
 
-#include "stub_gptimer.h"
+#include "driver/stub_gptimer.h"
 
 #define MAX_TIMERS 8
 

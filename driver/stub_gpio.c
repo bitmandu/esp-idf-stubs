@@ -1,10 +1,11 @@
 /**
  * @file stub_gpio.c
  *
- * Test stub for driver/gpio.c.
+ * Test stub for driver/gpio.h interface.
  */
 
-#include "stub_gpio.h"
+#include "driver/stub_gpio.h"
+
 #include <string.h>
 
 /**< GPIO levels */
